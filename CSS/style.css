@@ -564,6 +564,10 @@ nav ul li a{
     margin-bottom: .4em;
 }
 
+.project-contents .button a{
+    color: black;
+}
+
 .project-contents .button button{
     font-size: 1rem;
     padding: .3em .8em;
@@ -572,4 +576,5 @@ nav ul li a{
     background: var(--primary-);
     margin-top: 1em;
     box-shadow: 0 0 15px var(--primary-);
+    color: black;
 }
