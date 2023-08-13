@@ -126,7 +126,7 @@ nav ul li a{
 
 .active .line1{
     transform: translateY(9px) rotate(135deg);
-    transition: transform .3s .2s ease-in-out;
+    transition: transform .3s .35s ease-in-out;
 }
 
 .active .line2{
@@ -136,7 +136,7 @@ nav ul li a{
 
 .active .line3{
     transform: translateY(-7px) rotate(45deg);
-    transition: transform .3s .2s ease-in-out;
+    transition: transform .3s .35s ease-in-out;
 }
 
 .line1, .line2, .line3{
@@ -195,7 +195,7 @@ nav ul li a{
 /* second-page */
 
 .page{
-    background: linear-gradient(to bottom, black, #0000008d, transparent, transparent, transparent, transparent, #0000009a, black), url(../images/sep09.jpg);
+    background: linear-gradient(to bottom, black, #0000008d, transparent, transparent, transparent, transparent, transparent, transparent, #00000084, black), url(../images/sep09.jpg);
     background-size: cover;
     background-position: center;
     padding: 2em 0;
@@ -440,7 +440,7 @@ nav ul li a{
 
 .progress div .percentage{
     width: 80%;
-    height: 10px;
+    height: 8px;
     background: var(--primary-);
     position: relative;
 }
@@ -474,5 +474,102 @@ nav ul li a{
 }
 
 .progress .bar7 .percentage {
-    width: 23%;
+    width: 25%;
+}
+
+
+/* fifth-page */
+
+.c4{
+    padding: 1em;
+}
+
+.project-header{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.project-header p{
+    font-size: .9rem;
+    font-weight: 300;
+    color: var(--primary-);
+}
+
+.project-header h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.project-items{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.project-content{
+    background: url(../images/jk-interior.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: .5em;
+    box-shadow: 0 3px 15px black;
+}
+
+.portfolio1{
+    background: url(../images/portfolio.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.danimex{
+    background: url(../images/danimex.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio2{
+    background: url(../images/my-portfolio.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.anime-site{
+    background: url(../images/anime-site.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.project-contents{
+    background: #000000ac;
+    border-radius: .5em;
+    padding: 1em;
+}
+
+.project-contents img{
+    width: 8%;
+}
+
+.project-contents h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.project-contents p{
+    font-size: .8rem;
+    font-weight: 300;
+    margin: .6em 0;
+}
+
+.project-contents h3{
+    font-size: .9rem;
+    margin-bottom: .4em;
+}
+
+.project-contents .button button{
+    font-size: 1rem;
+    padding: .3em .8em;
+    border-radius: .3rem;
+    border: none;
+    background: var(--primary-);
+    margin-top: 1em;
+    box-shadow: 0 0 15px var(--primary-);
 }
