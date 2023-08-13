@@ -9,6 +9,7 @@
     --font-color: #d8d8d8;
     --paragraph-color: #adadad;
     --background-color: #060606;
+    --primary-: #ff5900;
 }
 
 body{
@@ -72,7 +73,7 @@ nav ul li a{
 
 .social-icons i{
     font-size: 2rem;
-    background: white;
+    background: var(--primary-);
     color: black;
     padding: .1em;
     border-radius: 50%;
@@ -182,6 +183,7 @@ nav ul li a{
     font-size: 1.3rem;
     padding: .3em 1em;
     border-radius: .3em;
+    background: var(--primary-);
     border: none;
     margin: 1em;
     color: black;
@@ -204,7 +206,7 @@ nav ul li a{
 .about-items{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 5em;
 }
 
 .about-content h1{
@@ -240,7 +242,7 @@ nav ul li a{
 }
 
 .about-content h3 span {
-    color: white;
+    color: var(--primary-);
     font-weight: 400;
 }
 
@@ -255,8 +257,8 @@ nav ul li a{
     padding: .6em 1em;
     border: none;
     border-radius: .3em;
-    background: black;
-    color: white;
+    background: var(--primary-);
+    color: black;
 }
 
 .phone-email{
@@ -274,6 +276,7 @@ nav ul li a{
 
 .phone i{
     font-size: 2rem;
+    color: var(--primary-);
 }
 
 .phone h4{
@@ -301,14 +304,14 @@ nav ul li a{
     backdrop-filter: blur(1em);
 }
 
-/* .blob{
+.blob{
     position: absolute;
-    background: rgb(67, 67, 67);
+    background: var(--primary-);
     width: 90%;
     height: 70%;
     border-radius: 55% 45% 60% 40% / 22% 28% 72% 78%;
-    top: -15%;
+    top: -10%;
     right: 0;
     z-index: -1;
     transform: rotate(20deg);
-} */
+}
