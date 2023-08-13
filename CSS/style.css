@@ -207,7 +207,7 @@ header{
 /* second-page */
 
 .page{
-    background: linear-gradient(to bottom, black, #00000063, transparent, transparent, transparent,transparent, transparent, transparent, transparent, #00000063, black), url(../images/sep09.jpg);
+    background: linear-gradient(to bottom, #000000, #00000020, #00000020, #00000020,#00000020, #00000020, #00000020, #00000020, #000000), url(../images/sep09.jpg);
     background-size: cover;
     background-position: center;
     padding: 2em 0;
