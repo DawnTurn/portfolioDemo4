@@ -10,6 +10,8 @@
     --paragraph-color: #adadad;
     --background-color: #060606;
     --primary-: #ff227a;
+    --paragraph-f-size: .8rem; 
+    --heading-f-size: 2rem;
 }
 
 body{
@@ -47,7 +49,7 @@ nav ul li{
 
 nav ul li a{
     transform: translateY(100%);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -192,11 +194,12 @@ nav ul li a{
 
 /* second-page */
 
-.second-page{
-    background: linear-gradient(to bottom, black, #000000ae, transparent, transparent, transparent, #000000cd, black), url(../images/sep09.jpg);
+.page{
+    background: linear-gradient(to bottom, black, #0000008d, transparent, transparent, transparent, transparent, #0000009a, black), url(../images/sep09.jpg);
     background-size: cover;
     background-position: center;
     padding: 2em 0;
+    overflow: hidden;
 }
 
 .c1{
@@ -211,7 +214,7 @@ nav ul li a{
 }
 
 .about-content h1{
-    font-size: 2rem;
+    font-size: var(--heading-f-size);
     font-weight: 500;
     color: white;
     /* color: transparent;
@@ -250,7 +253,7 @@ nav ul li a{
 .about-content p{
     font-size: .8rem;
     font-weight: 300;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 .about-content button{
@@ -260,6 +263,7 @@ nav ul li a{
     border-radius: .3em;
     background: var(--primary-);
     color: black;
+    margin-bottom: 1em;
 }
 
 .phone-email{
@@ -270,7 +274,7 @@ nav ul li a{
 }
 
 .phone{
-    background: rgba(0, 0, 0, 0.67);
+    background: #000000ab;
     padding: 1em 0;
     border-radius: .5rem;
 }
@@ -293,6 +297,7 @@ nav ul li a{
 }
 
 .about-img{
+    margin-top: 1em;
     position: relative;
     width: 100%;
     z-index: 10;
@@ -315,4 +320,65 @@ nav ul li a{
     right: 0;
     z-index: -1;
     transform: rotate(20deg);
+}
+
+/* third-page */
+.c2{
+    padding: 1em;
+}
+
+.services-header{
+    text-align: center;
+    margin: 1.2em 0;
+}
+
+.services-header h1{
+    font-size: var(--heading-f-size);
+    font-weight: 500;
+}
+
+.services-header p{
+    font-weight: 300;
+    color: var(--primary-);
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.service {
+    background: #000000ab;
+    border-radius: .6em;
+    padding: 8em 2em 2em;
+}
+
+.service i{
+    font-size: 2rem;
+    color: var(--primary-);
+}
+
+.service p{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    font-size: var(--paragraph-f-size);
+}
+
+.service h2{
+    font-size: 1.6rem;
+    margin: .5em 0;
+    font-weight: 400;
+}
+
+.service p i{
+    font-size: 1.4rem;
 }
