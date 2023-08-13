@@ -121,7 +121,7 @@ nav ul li a{
 }
 
 .active .line1{
-    transform: translateY(7px) rotate(135deg);
+    transform: translateY(9px) rotate(135deg);
     transition: transform .3s .2s ease-in-out;
 }
 
