@@ -107,6 +107,7 @@ nav ul li a{
     align-items: center;
     font-size: 1.7rem;
     font-weight: 500;
+    color: var(--primary-);
 }
 
 .head h1 i{
@@ -308,8 +309,8 @@ nav ul li a{
     position: absolute;
     background: var(--primary-);
     width: 90%;
-    height: 70%;
-    border-radius: 55% 45% 60% 40% / 22% 28% 72% 78%;
+    height: 80%;
+    border-radius: 55% 45% 56% 44% / 33% 34% 66% 67%;
     top: -10%;
     right: 0;
     z-index: -1;
