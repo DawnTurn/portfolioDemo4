@@ -144,11 +144,19 @@ nav ul li a{
     height: 2px;
     background: white;
     border-radius: .5em;
+}
+
+.line1{
     transition: .4s;
 }
 
 .line2{
     width: 2.5em;
+    transition: transform .4s .4s;
+}
+
+.line3{
+    transition: .4s;
 }
 
 .hero-content{
