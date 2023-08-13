@@ -382,3 +382,97 @@ nav ul li a{
 .service p i{
     font-size: 1.4rem;
 }
+
+/* fourth-page */
+
+.c3{
+    padding: 1em;
+}
+
+.skills {
+    text-align: center;
+    margin: 1.2em;
+}
+
+.skills h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.skills p{
+    font-size: .9rem;
+    font-weight: 300;
+}
+
+.skill-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.skills-logos{
+    text-align: center;
+}
+
+.skills-logos i{
+    font-size: 3rem;
+    color: var(--primary-);
+    margin: .5em;
+}
+
+.skills-progress{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8em;
+}
+
+.progress h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: .6em;
+}
+
+.progress div{
+    width: 100%;
+    background: #000000;
+    border-radius: 1em;
+}
+
+.progress div .percentage{
+    width: 80%;
+    height: 10px;
+    background: var(--primary-);
+    position: relative;
+}
+
+.progress div .percentage p{
+    position: absolute;
+    bottom: 100%;
+    font-weight: 200;
+    font-size: .8rem;
+    right: 0;
+}
+
+.progress .bar2 .percentage{
+    width: 70%;
+}
+
+.progress .bar3 .percentage{
+    width: 60%;
+}
+
+.progress .bar4 .percentage{
+    width: 55%;
+}
+
+.progress .bar5 .percentage {
+    width: 59%;
+}
+
+.progress .bar6 .percentage {
+    width: 40%;
+}
+
+.progress .bar7 .percentage {
+    width: 23%;
+}
