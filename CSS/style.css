@@ -688,7 +688,7 @@ form{
     color: var(--primary-);
 }
 
-button{
+form button{
     width: 10rem;
     padding: .6em;
     font-size: 1rem;
@@ -696,6 +696,7 @@ button{
     border: none;
     background: var(--primary-);
     box-shadow: 0 0 15px var(--primary-);
+    color: black;
 }
 
 .contacts{
