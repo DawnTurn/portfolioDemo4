@@ -200,6 +200,10 @@ nav ul li a{
     color: black;
 }
 
+header{
+    display: none;
+}
+
 /* second-page */
 
 .page{
@@ -284,7 +288,7 @@ nav ul li a{
 .phone{
     background: #000000ab;
     padding: 1em 0;
-    border-radius: .5rem;
+    border-radius: 1rem;
 }
 
 .phone i{
@@ -302,6 +306,8 @@ nav ul li a{
     font-weight: 200;
     letter-spacing: 1px;
     font-size: .8rem;
+    color: white;
+    text-decoration: none;
 }
 
 .about-img{
@@ -585,4 +591,161 @@ nav ul li a{
     margin-top: 1em;
     box-shadow: 0 0 15px var(--primary-);
     color: black;
+}
+
+/* sixth-page */
+
+.c5{
+    padding: 1em;
+}
+
+.contact-header{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.contact-header p{
+    font-size: .9rem;
+    color: var(--primary-);
+    font-weight: 300;
+}
+
+.contact-header h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 4em;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.input-box{
+    position: relative;
+    box-shadow: 0 5px 15px #000000c9;
+}
+
+.textarea-box{
+    position: relative;
+    box-shadow: 0 5px 15px #000000c9;
+}
+
+.input-box input, .textarea-box textarea{
+    width: 100%;
+    padding: 1.2em 1em;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.433);
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: .3s;
+    border-radius: .3em;
+}
+
+.input-box label{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    transition: .3s;
+}
+
+.textarea-box label{
+    position: absolute;
+    left: 5%;
+    top: 15px;
+    font-size: .9rem;
+    transition: .3s;
+}
+
+.input-box input:focus,
+.input-box input:valid,
+.textarea-box textarea:focus,
+.textarea-box textarea:valid{
+    border-bottom: 2px solid var(--primary-);
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    transform: translate(-5%, -50%) translateX(-3px) translateY(-27px);
+    font-size: .7rem;
+    color: var(--primary-);
+}
+
+.textarea-box textarea:focus ~ label,
+.textarea-box textarea:valid ~ label{
+    transform: translateX(-5px) translateY(-24px);
+    font-size: .7rem;
+    color: var(--primary-);
+}
+
+button{
+    width: 10rem;
+    padding: .6em;
+    font-size: 1rem;
+    border-radius: .5em;
+    border: none;
+    background: var(--primary-);
+    box-shadow: 0 0 15px var(--primary-);
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-item{
+    text-align: center;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.649);
+    border-radius: 1em;
+}
+
+.contact-item i{
+    font-size: 1.8rem;
+    color: var(--primary-);
+}
+
+.contact-item p{
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.contact-item h4{
+    font-size: 1.4rem;
+    margin: .3em;
+    font-weight: 400;
+}
+
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    gap: .7em;
+}
+
+
+/* footer */
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0e0e0e;
+}
+
+footer p{
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
 }
