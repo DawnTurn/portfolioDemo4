@@ -85,7 +85,7 @@ nav ul li a{
 
 .firstpage{
     height: 100vh;
-    background: linear-gradient(to bottom, #000000a9, #000000a9, #000000a9, #000000a9, #000000a9, #000000a9,#000000d1,  black), url(../images/selective-focus-african-american-it-employee-with-headset-working-remote-from-home-website-design-using-programming-technologies-computer-programmer-man-coding-digital-business-server.jpg);
+    background: linear-gradient(to bottom, #0000009b, #0000009b, #0000009b, #0000009b, #0000009b, #0000009b,#000000d1,  black), url(../images/selective-focus-african-american-it-employee-with-headset-working-remote-from-home-website-design-using-programming-technologies-computer-programmer-man-coding-digital-business-server.jpg);
     background-size: cover;
     background-position: center;
 }
