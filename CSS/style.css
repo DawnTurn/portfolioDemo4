@@ -195,13 +195,14 @@ nav ul li a{
 }
 
 .hero-content button{
-    font-size: 1.3rem;
-    padding: .3em 1em;
+    font-size: 1.2rem;
+    padding: .4em 1em;
     border-radius: .3em;
     background: var(--primary-);
     border: none;
     margin: 1em;
     color: black;
+    box-shadow: 0 0 15px var(--primary-);
 }
 
 header{
@@ -457,7 +458,7 @@ header{
 }
 
 .progress div .percentage{
-    width: 80%;
+    width: 95%;
     height: 8px;
     background: var(--primary-);
     position: relative;
@@ -472,27 +473,27 @@ header{
 }
 
 .progress .bar2 .percentage{
-    width: 70%;
+    width: 85%;
 }
 
 .progress .bar3 .percentage{
-    width: 60%;
+    width: 70%;
 }
 
 .progress .bar4 .percentage{
-    width: 55%;
+    width: 80%;
 }
 
 .progress .bar5 .percentage {
-    width: 59%;
+    width: 70%;
 }
 
 .progress .bar6 .percentage {
-    width: 40%;
+    width: 60%;
 }
 
 .progress .bar7 .percentage {
-    width: 25%;
+    width: 50%;
 }
 
 
@@ -904,6 +905,184 @@ footer p{
 
     .contact-item{
         width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .firstpage{
+        display: flex;
+    }
+
+    .hero-section{
+        width: 80%;
+    }
+
+    nav{
+        position: relative;
+        opacity: 1;
+        pointer-events: all;
+         width: 25%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         overflow: hidden;
+         background: #0c0c0c;
+    }
+
+    nav ul {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: unset;
+        gap: 2.4em;
+    }
+
+    nav ul li {
+        position: relative;
+        list-style: none;
+    }
+
+
+    nav ul li a {
+        display: unset;
+        transform: translateY(0);
+        font-weight: 300;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        margin: 0 .5em;
+        line-height: 1em;
+        color: white;
+    }
+
+
+    nav ul li a::before {
+        content: attr(data-text);
+        position: absolute;
+        color: var(--primary-);
+        width: 0;
+        overflow: hidden;
+        transition: 1s;
+        border-right: 1px solid var(--primary-);
+        -webkit-text-stroke: 1px var(--primary-);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    nav ul li a:hover::before {
+        width: 100%;
+    } 
+
+    .socials h3{
+        margin-bottom: .1em;
+    }
+
+    .social-icons{
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    header{
+        display: unset;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+
+    .header{
+        background: #0c0c0c;
+        box-shadow: 0 4px 20px black;
+        width: 100%;
+    }
+
+    .c1-header{
+        padding: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .c1-header h1{
+        display: flex;
+        align-items: center;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: var(--primary-);
+    }
+
+    .c1-header ul{
+        display: flex;
+        align-items: center;
+        gap: 4em;
+        list-style: none;
+    }
+
+    .c1-header ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        position: relative;
+    }
+
+    .c1-header ul li a::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: var(--primary-);
+        bottom: -14%;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .3s ease;
+    }
+
+    .c1-header ul li a:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+
+    .page{
+        height: 100vh;
+    }
+
+    .about-items{
+        height: 100%;
+    }
+
+    .about-content{
+        width: 50%;
+    }
+
+    .about-content h1{
+        font-size: 3rem;
+    }
+
+    .about-content h3{
+        font-size: 1.5rem;
+    }
+
+    .about-content p{
+        font-size: .9rem;
+    }
+
+    .about-img{
+        width: 48%;
+    }
+
+    .phone{
+        display: none;
     }
 
 }
