@@ -1,4 +1,5 @@
 const burger = document.querySelector('.burger')
+const body = document.querySelector('body')
 const tl = gsap.timeline()
 
 tl.to('nav', .5, {opacity: 1, pointerEvents: 'all'})
@@ -10,4 +11,5 @@ tl.to('nav', .5, {opacity: 1, pointerEvents: 'all'})
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
     tl.reversed(!tl.reversed())
+    body.classList.toggle('overflow')
 })
