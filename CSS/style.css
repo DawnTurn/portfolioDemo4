@@ -1099,5 +1099,25 @@ i.bxs-arrow-from-bottom{
         align-items: center;
     }
 
+    .skill .skills h1 {
+        font-size: 3rem;
+    }
 
+    .skill .skill-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+
+    .skill-content .skills-logos {
+        width: 35%;
+    }
+
+    .skill-content .skills-logos i {
+        /* font-size: 3rem; */
+    }
+
+    .skill-content .skills-progress {
+        width: 65%;
+    }
 }
