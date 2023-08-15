@@ -438,7 +438,7 @@ header{
 
 .progress div{
     width: 100%;
-    background: #000000;
+    background: #141414;
     border-radius: 1em;
 }
 
@@ -538,6 +538,12 @@ header{
 
 .anime-site{
     background: url(../images/anime-site.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.nature{
+    background: url(../images/Screenshot\ 2023-08-15\ at\ 11.59.40.png);
     background-size: cover;
     background-position: center;
 }
@@ -698,7 +704,7 @@ form button{
 .contact-item{
     text-align: center;
     padding: 1em;
-    background: rgba(0, 0, 0, 0.649);
+    background: rgba(10, 10, 10, 0.873);
     border-radius: 1em;
 }
 
@@ -755,6 +761,7 @@ i.bxs-arrow-from-bottom{
     position: fixed;
     bottom: 3%;
     right: 3%;
+    z-index: 999;
 }
 
 
@@ -1052,10 +1059,6 @@ i.bxs-arrow-from-bottom{
         transform-origin: left;
     }
 
-    /* .page{
-        height: 100vh;
-    } */
-
     .about-items{
         height: 100%;
         padding: 8em 0;
@@ -1099,25 +1102,103 @@ i.bxs-arrow-from-bottom{
         align-items: center;
     }
 
+    .c2{
+        padding: 2em 1em;
+    }
+
+    .c3{
+        padding: 4em 1em 5em;
+    }
+
     .skill .skills h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .skill .skill-content {
         display: flex;
         flex-direction: row;
-        margin-top: 3rem;
+        margin-top: 3.5em;
     }
 
     .skill-content .skills-logos {
         width: 35%;
     }
 
-    .skill-content .skills-logos i {
-        /* font-size: 3rem; */
-    }
-
     .skill-content .skills-progress {
         width: 65%;
+    }
+
+    .skills-progress{
+        gap: 2.5em;
+    }
+
+    .c4{
+        padding: 5em 1em;
+    }
+
+    .project-header{
+        margin-bottom: 4em;
+    }
+
+    .project-content{
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .project-content:hover .project-contents{
+        transform: translateX(0);
+    }
+
+    .project-contents{
+        height: 100%;
+        transform: translateX(100%);
+        transition: .3s ease-in-out;
+    }
+
+    .project-contents .button a button{
+        cursor: pointer;
+    }
+
+    .project-header h1{
+        font-size: 3rem;
+    }
+
+    .project-header p{
+        font-size: 1rem;
+    }
+
+    .project-items{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    }
+
+    .contact-header h1{
+        font-size: 3rem;
+    }
+
+    .contact-header p{
+        font-size: 1rem;
+    }
+
+    .c5{
+        padding: 3em 1em;
+    }
+
+    form{
+        width: 80%;
+        margin: 0 auto 3em auto;
+    }
+
+    form button{
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    form button:hover{
+        box-shadow: 0 2px 15px var(--primary-),
+                     0 2px 25px var(--primary-);
     }
 }
