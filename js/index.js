@@ -603,6 +603,25 @@ function isTouch(){
             },
           }
         );
+
+        gsap.fromTo(
+          ".back-top",
+          0.5,
+          { opacity: 0 },
+          {
+            opacity: 1,
+            scrollTrigger: {
+              trigger: ".second-page",
+              start: "top 50%",
+              end: "bottom bottom",
+              onEnter: () => gsap.to(".back-top", 0.5, { opacity: 1 }),
+              onLeaveBack: () =>
+                gsap.to(".back-top", 0.1, {
+                  opacity: 0,
+                }),
+            },
+          }
+        );
   }
 }
 
