@@ -999,6 +999,10 @@ i.bxs-arrow-from-bottom{
         display: none;
     }
 
+    .hero-contents button{
+        cursor: pointer;
+    }
+
     header{
         display: unset;
         position: sticky;
