@@ -622,6 +622,8 @@ function isTouch(){
             },
           }
         );
+
+        gsap
   }
 }
 
