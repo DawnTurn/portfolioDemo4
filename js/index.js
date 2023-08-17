@@ -52,9 +52,9 @@ function isTouch(){
               onEnterBack: () =>
                 gsap.to(".about-content", 0.8, { opacity: 1, x: 0 }),
               onLeave: () =>
-                gsap.to(".about-content", 0.1, { opacity: 0, x: "-100px" }),
+                gsap.to(".about-content", 0.5, { opacity: 0, x: "-100px" }),
               onLeaveBack: () =>
-                gsap.to(".about-content", 0.1, { opacity: 0, x: "-100px" }),
+                gsap.to(".about-content", 0.5, { opacity: 0, x: "-100px" }),
             },
           }
         );
@@ -75,9 +75,9 @@ function isTouch(){
               onEnterBack: () =>
                 gsap.to(".about-img", 0.8, { opacity: 1, y: 0 }),
               onLeave: () =>
-                gsap.to(".about-img", 0.1, { opacity: 0, y: "100px" }),
+                gsap.to(".about-img", .5, { opacity: 0, y: "100px" }),
               onLeaveBack: () =>
-                gsap.to(".about-img", 0.1, { opacity: 0, y: "100px" }),
+                gsap.to(".about-img", 0.5, { opacity: 0, y: "100px" }),
             },
           }
         );
@@ -110,12 +110,12 @@ function isTouch(){
                   ease: Power2.easeInOut,
                 }),
               onLeave: () =>
-                gsap.to(".flex", 0.1, {
+                gsap.to(".flex", 0.5, {
                   opacity: 0,
                   x: "-100px",
                 }),
               onLeaveBack: () =>
-                gsap.to(".flex", 0.1, {
+                gsap.to(".flex", 0.5, {
                   opacity: 0,
                   x: "-100px",
                 }),
@@ -145,11 +145,11 @@ function isTouch(){
                   stagger: 0.09,
                 }),
               onLeave: () =>
-                gsap.to(".skills-logos i", 0.1, {
+                gsap.to(".skills-logos i", 0.5, {
                   opacity: 0
                 }),
               onLeaveBack: () =>
-                gsap.to(".skills-logos i", 0.1, {
+                gsap.to(".skills-logos i", 0.5, {
                   opacity: 0
                 }),
             },
@@ -175,11 +175,11 @@ function isTouch(){
                   width: "95%",
                 }),
               onLeave: () =>
-                gsap.to(".bar1 .percentage", 0.1, {
+                gsap.to(".bar1 .percentage", 0.5, {
                   width: 0,
                 }),
               onLeaveBack: () =>
-                gsap.to(".bar1 .percentage", 0.1, {
+                gsap.to(".bar1 .percentage", 0.5, {
                   width: 0,
                 }),
             },
@@ -205,11 +205,11 @@ function isTouch(){
                   width: "85%",
                 }),
               onLeave: () =>
-                gsap.to(".bar2 .percentage", 0.1, {
+                gsap.to(".bar2 .percentage", 0.5, {
                   width: 0,
                 }),
               onLeaveBack: () =>
-                gsap.to(".bar2 .percentage", 0.1, {
+                gsap.to(".bar2 .percentage", 0.5, {
                   width: 0,
                 }),
             },
@@ -235,11 +235,11 @@ function isTouch(){
                   width: "70%",
                 }),
               onLeave: () =>
-                gsap.to(".bar3 .percentage", 0.1, {
+                gsap.to(".bar3 .percentage", 0.5, {
                   width: 0,
                 }),
               onLeaveBack: () =>
-                gsap.to(".bar3 .percentage", 0.1, {
+                gsap.to(".bar3 .percentage", 0.5, {
                   width: 0,
                 }),
             },
@@ -265,11 +265,11 @@ function isTouch(){
                   width: "80%",
                 }),
               onLeave: () =>
-                gsap.to(".bar4 .percentage", 0.1, {
+                gsap.to(".bar4 .percentage", 0.5, {
                   width: 0,
                 }),
               onLeaveBack: () =>
-                gsap.to(".bar4 .percentage", 0.1, {
+                gsap.to(".bar4 .percentage", 0.5, {
                   width: 0,
                 }),
             },
@@ -295,11 +295,11 @@ function isTouch(){
                   width: "70%",
                 }),
               onLeave: () =>
-                gsap.to(".bar5 .percentage", 0.1, {
+                gsap.to(".bar5 .percentage", 0.5, {
                   width: 0,
                 }),
               onLeaveBack: () =>
-                gsap.to(".bar5 .percentage", 0.1, {
+                gsap.to(".bar5 .percentage", 0.5, {
                   width: 0,
                 }),
             },
@@ -325,11 +325,11 @@ function isTouch(){
                   width: "60%",
                 }),
               onLeave: () =>
-                gsap.to(".bar6 .percentage", 0.1, {
+                gsap.to(".bar6 .percentage", 0.5, {
                   width: 0,
                 }),
               onLeaveBack: () =>
-                gsap.to(".bar6 .percentage", 0.1, {
+                gsap.to(".bar6 .percentage", 0.5, {
                   width: 0,
                 }),
             },
@@ -355,11 +355,11 @@ function isTouch(){
                   width: "50%",
                 }),
               onLeave: () =>
-                gsap.to(".bar7 .percentage", 0.1, {
+                gsap.to(".bar7 .percentage", 0.5, {
                   width: 0,
                 }),
               onLeaveBack: () =>
-                gsap.to(".bar7 .percentage", 0.1, {
+                gsap.to(".bar7 .percentage", 0.5, {
                   width: 0,
                 }),
             },
@@ -394,12 +394,12 @@ function isTouch(){
                   ease: Power2.easeInOut,
                 }),
               onLeave: () =>
-                gsap.to(".left-slide", 0.1, {
+                gsap.to(".left-slide", 0.5, {
                   opacity: 0,
                   x: "-100px",
                 }),
               onLeaveBack: () =>
-                gsap.to(".left-slide", 0.1, {
+                gsap.to(".left-slide", 0.5, {
                   opacity: 0,
                   x: "-100px",
                 }),
@@ -435,12 +435,12 @@ function isTouch(){
                   ease: Power2.easeInOut,
                 }),
               onLeave: () =>
-                gsap.to(".right-slide", 0.1, {
+                gsap.to(".right-slide", 0.5, {
                   opacity: 0,
                   x: "100px",
                 }),
               onLeaveBack: () =>
-                gsap.to(".right-slide", 0.1, {
+                gsap.to(".right-slide", 0.5, {
                   opacity: 0,
                   x: "100px",
                 }),
@@ -476,12 +476,12 @@ function isTouch(){
                   ease: Power2.easeInOut,
                 }),
               onLeave: () =>
-                gsap.to(".portfolio1", 0.1, {
+                gsap.to(".portfolio1", 0.5, {
                   opacity: 0,
                   y: "-50px",
                 }),
               onLeaveBack: () =>
-                gsap.to(".portfolio1", 0.1, {
+                gsap.to(".portfolio1", 0.5, {
                   opacity: 0,
                   y: "-50px",
                 }),
@@ -517,12 +517,12 @@ function isTouch(){
                   ease: Power2.easeInOut,
                 }),
               onLeave: () =>
-                gsap.to(".anime-site", 0.1, {
+                gsap.to(".anime-site", 0.5, {
                   opacity: 0,
                   y: "50px",
                 }),
               onLeaveBack: () =>
-                gsap.to(".anime-site", 0.1, {
+                gsap.to(".anime-site", 0.5, {
                   opacity: 0,
                   y: "50px",
                 }),
@@ -558,12 +558,12 @@ function isTouch(){
                   ease: Power2.easeInOut,
                 }),
               onLeave: () =>
-                gsap.to(".down-slide", 0.1, {
+                gsap.to(".down-slide", 0.5, {
                   opacity: 0,
                   y: "-50px",
                 }),
               onLeaveBack: () =>
-                gsap.to(".down-slide", 0.1, {
+                gsap.to(".down-slide", 0.5, {
                   opacity: 0,
                   y: "-50px",
                 }),
@@ -593,11 +593,11 @@ function isTouch(){
                   stagger: 0.2,
                 }),
               onLeave: () =>
-                gsap.to(".contact-item", 0.1, {
+                gsap.to(".contact-item", 0.5, {
                   opacity: 0,
                 }),
               onLeaveBack: () =>
-                gsap.to(".contact-item", 0.1, {
+                gsap.to(".contact-item", 0.5, {
                   opacity: 0,
                 }),
             },
@@ -622,8 +622,6 @@ function isTouch(){
             },
           }
         );
-
-        gsap
   }
 }
 
