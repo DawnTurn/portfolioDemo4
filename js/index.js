@@ -44,13 +44,23 @@ function isTouch(){
           {
             opacity: 1,
             x: 0,
+            ease: Power3.easeInOut,
             scrollTrigger: {
               trigger: ".second-page",
               start: "top 40%",
               end: "bottom 40%",
-              onEnter: () => gsap.to(".about-content", 0.8, { opacity: 1, x: 0 }),
+              onEnter: () =>
+                gsap.to(".about-content", 0.8, {
+                  opacity: 1,
+                  x: 0,
+                  ease: Power3.easeInOut,
+                }),
               onEnterBack: () =>
-                gsap.to(".about-content", 0.8, { opacity: 1, x: 0 }),
+                gsap.to(".about-content", 0.8, {
+                  opacity: 1,
+                  x: 0,
+                  ease: Power3.easeInOut,
+                }),
               onLeave: () =>
                 gsap.to(".about-content", 0.5, { opacity: 0, x: "-100px" }),
               onLeaveBack: () =>
@@ -66,16 +76,24 @@ function isTouch(){
           {
             opacity: 1,
             y: 0,
-            ease: Power2.easeInOut,
             scrollTrigger: {
               trigger: ".second-page",
               start: "top 40%",
               end: "bottom 40%",
-              onEnter: () => gsap.to(".about-img", 0.8, { opacity: 1, y: 0 }),
+              onEnter: () =>
+                gsap.to(".about-img", 0.8, {
+                  opacity: 1,
+                  y: 0,
+                  ease: Power3.easeInOut,
+                }),
               onEnterBack: () =>
-                gsap.to(".about-img", 0.8, { opacity: 1, y: 0 }),
+                gsap.to(".about-img", 0.8, {
+                  opacity: 1,
+                  y: 0,
+                  ease: Power3.easeInOut,
+                }),
               onLeave: () =>
-                gsap.to(".about-img", .5, { opacity: 0, y: "100px" }),
+                gsap.to(".about-img", 0.5, { opacity: 0, y: "100px" }),
               onLeaveBack: () =>
                 gsap.to(".about-img", 0.5, { opacity: 0, y: "100px" }),
             },
@@ -169,10 +187,12 @@ function isTouch(){
               onEnter: () =>
                 gsap.to(".bar1 .percentage", 0.7, {
                   width: "95%",
+                  ease: Power3.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".bar1 .percentage", 0.7, {
                   width: "95%",
+                  ease: Power3.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".bar1 .percentage", 0.5, {
@@ -199,10 +219,12 @@ function isTouch(){
               onEnter: () =>
                 gsap.to(".bar2 .percentage", 0.7, {
                   width: "85%",
+                  ease: Power3.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".bar2 .percentage", 0.7, {
                   width: "85%",
+                  ease: Power3.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".bar2 .percentage", 0.5, {
@@ -229,10 +251,12 @@ function isTouch(){
               onEnter: () =>
                 gsap.to(".bar3 .percentage", 0.7, {
                   width: "70%",
+                  ease: Power3.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".bar3 .percentage", 0.7, {
                   width: "70%",
+                  ease: Power3.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".bar3 .percentage", 0.5, {
@@ -259,10 +283,12 @@ function isTouch(){
               onEnter: () =>
                 gsap.to(".bar4 .percentage", 0.7, {
                   width: "80%",
+                  ease: Power3.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".bar4 .percentage", 0.7, {
                   width: "80%",
+                  ease: Power3.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".bar4 .percentage", 0.5, {
@@ -289,10 +315,12 @@ function isTouch(){
               onEnter: () =>
                 gsap.to(".bar5 .percentage", 0.7, {
                   width: "70%",
+                  ease: Power3.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".bar5 .percentage", 0.7, {
                   width: "70%",
+                  ease: Power3.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".bar5 .percentage", 0.5, {
@@ -319,10 +347,12 @@ function isTouch(){
               onEnter: () =>
                 gsap.to(".bar6 .percentage", 0.7, {
                   width: "60%",
+                  ease: Power3.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".bar6 .percentage", 0.7, {
                   width: "60%",
+                  ease: Power3.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".bar6 .percentage", 0.5, {
@@ -349,10 +379,12 @@ function isTouch(){
               onEnter: () =>
                 gsap.to(".bar7 .percentage", 0.7, {
                   width: "50%",
+                  ease: Power3.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".bar7 .percentage", 0.7, {
                   width: "50%",
+                  ease: Power3.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".bar7 .percentage", 0.5, {
@@ -373,7 +405,7 @@ function isTouch(){
           {
             opacity: 1,
             x: 0,
-            ease: Power2.easeInOut,
+            ease: Power4.easeInOut,
             stagger: 0.1,
             scrollTrigger: {
               trigger: ".fifth-page",
@@ -384,14 +416,14 @@ function isTouch(){
                   opacity: 1,
                   x: 0,
                   stagger: 0.1,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".left-slide", 0.7, {
                   opacity: 1,
                   x: 0,
                   stagger: 0.1,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".left-slide", 0.5, {
@@ -414,7 +446,7 @@ function isTouch(){
           {
             opacity: 1,
             x: 0,
-            ease: Power2.easeInOut,
+            ease: Power4.easeInOut,
             stagger: 0.1,
             scrollTrigger: {
               trigger: ".fifth-page",
@@ -425,14 +457,14 @@ function isTouch(){
                   opacity: 1,
                   x: 0,
                   stagger: 0.1,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".right-slide", 0.7, {
                   opacity: 1,
                   x: 0,
                   stagger: 0.1,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".right-slide", 0.5, {
@@ -455,7 +487,7 @@ function isTouch(){
           {
             opacity: 1,
             y: 0,
-            ease: Power2.easeInOut,
+            ease: Power4.easeInOut,
             stagger: 0.1,
             scrollTrigger: {
               trigger: ".fifth-page",
@@ -466,14 +498,14 @@ function isTouch(){
                   opacity: 1,
                   y: 0,
                   stagger: 0.1,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".portfolio1", 0.7, {
                   opacity: 1,
                   y: 0,
                   stagger: 0.1,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".portfolio1", 0.5, {
@@ -496,7 +528,7 @@ function isTouch(){
           {
             opacity: 1,
             y: 0,
-            ease: Power2.easeInOut,
+            ease: Power4.easeInOut,
             stagger: 0.1,
             scrollTrigger: {
               trigger: ".fifth-page",
@@ -507,14 +539,14 @@ function isTouch(){
                   opacity: 1,
                   y: 0,
                   stagger: 0.1,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".anime-site", 0.7, {
                   opacity: 1,
                   y: 0,
                   stagger: 0.1,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".anime-site", 0.5, {
@@ -537,7 +569,7 @@ function isTouch(){
           {
             opacity: 1,
             y: 0,
-            ease: Power2.easeInOut,
+            ease: Power4.easeInOut,
             stagger: 0.15,
             scrollTrigger: {
               trigger: ".sixth-page",
@@ -548,14 +580,14 @@ function isTouch(){
                   opacity: 1,
                   y: 0,
                   stagger: 0.15,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".down-slide", 0.7, {
                   opacity: 1,
                   y: 0,
                   stagger: 0.15,
-                  ease: Power2.easeInOut,
+                  ease: Power4.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".down-slide", 0.5, {
@@ -586,11 +618,13 @@ function isTouch(){
                 gsap.to(".contact-item", 0.7, {
                   opacity: 1,
                   stagger: 0.2,
+                  ease: Power3.easeInOut,
                 }),
               onEnterBack: () =>
                 gsap.to(".contact-item", 0.7, {
                   opacity: 1,
                   stagger: 0.2,
+                  ease: Power3.easeInOut,
                 }),
               onLeave: () =>
                 gsap.to(".contact-item", 0.5, {
@@ -622,6 +656,238 @@ function isTouch(){
             },
           }
         );
+  }
+
+
+  if (window.matchMedia("(max-width: 1024px)").matches){
+      gsap.fromTo(
+        ".about-content",
+        0.8,
+        { opacity: 0, y: "100px" },
+        {
+          opacity: 1,
+          y: 0,
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".second-page",
+            start: "top 40%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".about-img",
+        0.8,
+        { opacity: 0, y: "100px" },
+        {
+          opacity: 1,
+          y: 0,
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".about-img",
+            start: "top 70%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      services = gsap.utils.toArray('.service')
+
+      services.forEach(service => {
+        gsap.fromTo(
+          service,
+          0.8,
+          { opacity: 0, x: "-100px" },
+          {
+            opacity: 1,
+            x: 0,
+            ease: Power4.easeInOut,
+            scrollTrigger: {
+              trigger: service,
+              start: "top center",
+              end: "bottom 40%",
+            },
+          }
+        );
+      })
+
+      gsap.fromTo(
+        ".skills-logos i",
+        0.6,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          stagger: 0.09,
+          scrollTrigger: {
+            trigger: ".fourth-page",
+            start: "top 40%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".bar1 .percentage",
+        0.7,
+        { width: 0 },
+        {
+          width: "95%",
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".bar1",
+            start: "top 75%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".bar2 .percentage",
+        0.7,
+        { width: 0 },
+        {
+          width: "85%",
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".bar2",
+            start: "top 75%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".bar3 .percentage",
+        0.7,
+        { width: 0 },
+        {
+          width: "70%",
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".bar3",
+            start: "top 75%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".bar4 .percentage",
+        0.7,
+        { width: 0 },
+        {
+          width: "80%",
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".bar4",
+            start: "top 75%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".bar5 .percentage",
+        0.7,
+        { width: 0 },
+        {
+          width: "70%",
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".bar5",
+            start: "top 75%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".bar6 .percentage",
+        0.7,
+        { width: 0 },
+        {
+          width: "60%",
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".bar6",
+            start: "top 75%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".bar7 .percentage",
+        0.7,
+        { width: 0 },
+        {
+          width: "50%",
+          ease: Power3.easeInOut,
+          scrollTrigger: {
+            trigger: ".bar7",
+            start: "top 75%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      projects = gsap.utils.toArray(".project-content");
+
+      projects.forEach((project) => {
+        gsap.fromTo(
+          project,
+          0.8,
+          { opacity: 0, x: "-100px" },
+          {
+            opacity: 1,
+            x: 0,
+            ease: Power4.easeInOut,
+            scrollTrigger: {
+              trigger: project,
+              start: "top center",
+              end: "bottom 40%",
+            },
+          }
+        );
+      });
+
+      gsap.fromTo(
+        ".down-slide",
+        0.7,
+        { opacity: 0, y: "-50px" },
+        {
+          opacity: 1,
+          y: 0,
+          ease: Power4.easeInOut,
+          stagger: 0.15,
+          scrollTrigger: {
+            trigger: ".sixth-page",
+            start: "top 40%",
+            end: "bottom 40%",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".back-top",
+        0.5,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          scrollTrigger: {
+            trigger: ".second-page",
+            start: "top 50%",
+            end: "bottom bottom",
+            onEnter: () => gsap.to(".back-top", 0.5, { opacity: 1 }),
+            onLeaveBack: () =>
+              gsap.to(".back-top", 0.1, {
+                opacity: 0,
+              }),
+          },
+        }
+      );
+
   }
 }
 

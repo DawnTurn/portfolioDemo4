@@ -58,10 +58,11 @@ nav ul li{
 
 nav ul li a{
     transform: translateY(100%);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-decoration: none;
     color: white;
     display: inline-block;
+    font-weight: 200;
 }
 
 .socials{
@@ -179,18 +180,18 @@ nav ul li a{
 .hero-content p:nth-child(1){
     font-family: 'Dancing Script', cursive;
     color: var(--paragraph-color);
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .hero-content h1{
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     font-weight: 500;
     color: white;
     margin: .3em;
 }
 
 .hero-content p:nth-child(3){
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 200;
     margin: .5em;
 }
@@ -200,7 +201,7 @@ nav ul li a{
 }
 
 .hero-content button{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: .4em 1em;
     border-radius: .3em;
     background: var(--primary-);
